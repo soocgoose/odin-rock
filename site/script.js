@@ -26,7 +26,8 @@ function playRound(player1, player2) {
 	if (player1 === player2) {
 		return {winner: 0, message: `${playerOneName} and ${playerTwoName} tie with ${player1}`};
 	} else if(player1 === 'rock' && player2 === 'scissors'
-		|| player1 === 'scissors' && player2 === 'paper') {
+		|| player1 === 'paper' && player2 === 'rock')
+		|| player1 === 'scissors' && player2 === 'paper' {
 		return {winner: 1, message: `${playerOneName} wins! ${player1} beats ${player2}`};
 	} else {
 		return {winner: 2, message: `${playerTwoName} wins! ${player2} beats ${player1}`};
