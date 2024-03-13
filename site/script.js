@@ -9,6 +9,15 @@ function getComputerChoice() {
 	}
 }
 
+function showUserButtonChoice(elem) {
+	console.log(elem.target.id);
+}
+
+let buttons = document.querySelectorAll('button');
+for (const btn of buttons) {
+	btn.addEventListener('click', showUserButtonChoice);
+}
+
 function getUserChoice() {
 	let validChoice = false;
 	do {
