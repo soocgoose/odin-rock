@@ -13,7 +13,7 @@ function showUserButtonChoice(elem) {
 	console.log(elem.target.id);
 }
 
-let buttons = document.querySelectorAll('button');
+let buttons = document.querySelectorAll('#user-input > button');
 for (const btn of buttons) {
 	btn.addEventListener('click', showUserButtonChoice);
 }
